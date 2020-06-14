@@ -12,31 +12,45 @@
       </div>
     </div>
     <div class="goals__container">
-      <div class="goal">
-        <img src="../assets/palmera.png" />
-        <p>Viaje a islas canarias</p>
-        <pie-chart
-          :donut="true"
-          :colors="['#FAF9FD', '#54D1ED']"
-          :data="[
-            ['$8.000.000', 80],
-            ['$1.630.000', 20]
-          ]"
-        ></pie-chart>
+      <div class="goal" v-for="g in goals"
+                :key="`${g.name}`">
+        <img src="../assets/palmera.png" />         
+        <p>{{g.name}}</p>
+        <vc-donut
+          background="white"
+          foreground="white"
+          :size="50"
+          unit="px"
+          :thickness="30"
+          has-legend
+          legend-placement="right"
+          :sections="g.sections"
+          :total="100"
+          :start-angle="0"
+          :auto-adjust-text-size="true"
+        >
+          <h1>20%</h1>
+        </vc-donut>
       </div>
-      <div class="goal">
+      <!-- <div class="goal">
         <img src="../assets/computer.png" />
-        <p>Macbook Pro</p>
-
-        <pie-chart
-          :donut="true"
-          :colors="['#54D1ED', '#FAF9FD']"
-          :data="[
-            ['$0', 0],
-            ['$7.000.000', 100]
-          ]"
-        ></pie-chart>
-      </div>
+        <p>{{goals[1].name}}</p>
+        <vc-donut
+          background="white"
+          foreground="white"
+          :size="50"
+          unit="px"
+          :thickness="30"
+          has-legend
+          legend-placement="right"
+          :sections="goals[0].sections"
+          :total="100"
+          :start-angle="0"
+          :auto-adjust-text-size="true"
+        >
+          <h1>0%</h1>
+        </vc-donut>
+      </div> -->
     </div>
   </section>
 </template>
@@ -46,12 +60,46 @@ export default {
   name: "Goal",
   props: {
     msg: String
+  },
+  data() {
+    return {
+      goals: [
+        {
+          name: "Viaje a Islas Canarias",
+          img: "../assets/palmera.png",
+          sections: [
+            { label: "$1.630.000", value: 20, color: "#51CAEC" },
+            { label: "$8.000.000", value: 80, color: "#FAF9FD" }
+          ]
+        },
+        {
+          name: "Macbook Pro",
+          img: "../assets/computer.png",
+          sections: [
+            { label: "$0", value: 0, color: "#51CAEC" },
+            { label: "$7.000.000", value: 100, color: "#FAF9FD" }
+          ]
+        }
+      ]
+    };
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
+
+.cdc-legend-item span:last-child{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    
+}
+.cdc-legend-item-color{
+    display: none;
+}
 .goals__container {
   display: flex;
   justify-content: space-between;
@@ -72,10 +120,27 @@ export default {
   box-shadow: 0px 8px 20px rgba(197, 166, 236, 0.05);
   border-radius: 20px;
   padding: 20px;
-  width: 150px;
+  width: 158px;
+}
+
+.goal > p{
+    font-weight: 600;
+font-size: 14px;
+line-height: 21px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+
+/* 50% */
+
+color: #817699;
+width: 118px;
+height: 42px;
 }
 
 .goal:first-child {
-  margin-left: 3%;
+  /* margin-left: 3%; */
 }
 </style>
