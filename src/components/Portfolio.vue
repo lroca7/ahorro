@@ -233,7 +233,7 @@ export default {
 
 .portafolio__resume--roboadvisor {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 20%;
 }
 

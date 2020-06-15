@@ -5,6 +5,7 @@
     <Portfolio />
     <Video />
     <Tip />
+    <Menu />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Goal from "./components/Goal.vue";
 import Portfolio from "./components/Portfolio.vue";
 import Video from "./components/Video.vue";
 import Tip from "./components/Tip.vue";
+import Menu from "./components/Menu.vue";
 
 export default {
   name: "App",
@@ -22,7 +24,8 @@ export default {
     Goal,
     Portfolio,
     Video,
-    Tip
+    Tip,
+    Menu
   }
 };
 </script>
@@ -30,8 +33,8 @@ export default {
 <style>
 #app {
   position: relative;
-  background: #f8f8fc;
-
+  /* background: #f8f8fc; */
+  background: #d0d0d1;
   width: 375px;
   height: 1956px;
 

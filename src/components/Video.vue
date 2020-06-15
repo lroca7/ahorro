@@ -91,7 +91,7 @@ export default {
     #54d1ed;
   background-blend-mode: multiply, normal;
   padding: 30px;
-  margin-top: -14px;
+  margin-top: -14%;
 }
 
 .video__description p {
