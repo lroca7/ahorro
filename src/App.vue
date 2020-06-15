@@ -4,6 +4,7 @@
     <Goal />
     <Portfolio />
     <Video />
+    <Tip />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Resume from "./components/Resume.vue";
 import Goal from "./components/Goal.vue";
 import Portfolio from "./components/Portfolio.vue";
 import Video from "./components/Video.vue";
+import Tip from "./components/Tip.vue";
 
 export default {
   name: "App",
@@ -19,7 +21,8 @@ export default {
     Resume,
     Goal,
     Portfolio,
-    Video
+    Video,
+    Tip
   }
 };
 </script>
