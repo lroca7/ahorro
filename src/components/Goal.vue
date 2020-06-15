@@ -12,10 +12,9 @@
       </div>
     </div>
     <div class="goals__container">
-      <div class="goal" v-for="g in goals"
-                :key="`${g.name}`">
-        <img src="../assets/palmera.png" />         
-        <p>{{g.name}}</p>
+      <div class="goal" v-for="g in goals" :key="`${g.name}`">
+        <img src="../assets/palmera.png" />
+        <p>{{ g.name }}</p>
         <vc-donut
           background="white"
           foreground="white"
@@ -87,18 +86,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style >
-
-.cdc-legend-item span:last-child{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: -0.03em;
-    
+<style>
+.cdc-legend-item span:last-child {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
 }
-.cdc-legend-item-color{
-    display: none;
+.cdc-legend-item-color {
+  display: none;
 }
 .goals__container {
   display: flex;
@@ -123,24 +120,24 @@ export default {
   width: 158px;
 }
 
-.goal > p{
-    font-weight: 600;
-font-size: 14px;
-line-height: 21px;
-/* or 150% */
+.goal > p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* or 150% */
 
-display: flex;
-align-items: center;
-letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
 
-/* 50% */
+  /* 50% */
 
-color: #817699;
-width: 118px;
-height: 42px;
+  color: #817699;
+  width: 118px;
+  height: 42px;
 }
 
 .goal:first-child {
-  /* margin-left: 3%; */
+  margin-right: 3%;
 }
 </style>

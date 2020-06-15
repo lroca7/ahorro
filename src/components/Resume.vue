@@ -1,6 +1,6 @@
 <template>
   <section class="resume">
-    <!-- <div class="header">
+    <div class="header">
       <div class="header__title">
         <p class="header__title--welcome">Hola, Camila</p>
         <div class="icon__container">
@@ -30,7 +30,7 @@
         <p class="bold-600">$1.600.000</p>
         <p class="bold-600">-30.000</p>
       </div>
-    </div> -->
+    </div>
   </section>
 </template>
 
@@ -45,10 +45,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.resume{
-  min-height: 200px;
-}
-
 .invest__summary--values {
   font-weight: 600;
   text-align: end;
@@ -137,12 +133,10 @@ export default {
 }
 
 .header__title--welcome {
-  /* font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  color: #58506B; */
 }
 .icon {
   width: 50px;

@@ -1,35 +1,38 @@
 <template>
   <div id="app">
     <Resume />
-    <!-- <Goal />
-    <Portfolio />  -->
+    <Goal />
+    <Portfolio />
+    <Video />
   </div>
 </template>
 
 <script>
 import Resume from "./components/Resume.vue";
-// import Goal from "./components/Goal.vue";
-// import Portfolio from "./components/Portfolio.vue";
+import Goal from "./components/Goal.vue";
+import Portfolio from "./components/Portfolio.vue";
+import Video from "./components/Video.vue";
 
 export default {
   name: "App",
   components: {
     Resume,
-    // Goal,
-    // Portfolio
+    Goal,
+    Portfolio,
+    Video
   }
 };
 </script>
 
 <style>
-
 #app {
   position: relative;
   background: #f8f8fc;
-  /* width: 375px; */
-  /* height: 1956px;
- 
+
+  width: 375px;
+  height: 1956px;
+
   padding: 24px;
-  font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 </style>

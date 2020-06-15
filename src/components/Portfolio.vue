@@ -20,7 +20,7 @@
           :total="100"
           :start-angle="0"
           :auto-adjust-text-size="true"
-        > 
+        >
           <img class="portafolio__resume--img" src="../assets/robot.png" />
           <p class="text__robot">RoboAdvisor</p>
           <p class="text__fondos">10 Fondos</p>
