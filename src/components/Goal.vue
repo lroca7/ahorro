@@ -4,16 +4,13 @@
       <div class="header__title">
         <p class="header__title--welcome">Tus metas</p>
         <div class="icon__container">
-          <img
-            class="icon"
-            src="https://img.icons8.com/carbon-copy/100/000000/bell.png"
-          />
+          <img class="icon" src="../assets/bell.png" />
         </div>
       </div>
     </div>
     <div class="goals__container">
       <div class="goal" v-for="g in goals" :key="`${g.name}`">
-        <img src="../assets/palmera.png" /> 
+        <img src="../assets/palmera.png" />
         <p>{{ g.name }}</p>
         <vc-donut
           background="white"

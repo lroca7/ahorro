@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <Resume />
-    
+
     <Goal />
-    
+
     <Portfolio />
-   
+
     <Video />
-    
+
     <Tip />
     <Menu />
   </div>
@@ -35,10 +35,13 @@ export default {
 </script>
 
 <style>
+body {
+  background: #f8f8fc;
+}
 #app {
   position: relative;
-  /* background: #f8f8fc; */
-  background: #d0d0d1;
+  background: #f8f8fc;
+  /* background: #d0d0d1; */
   width: 375px;
   height: 1956px;
 

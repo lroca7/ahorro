@@ -4,10 +4,7 @@
       <div class="header__title">
         <p class="header__title--welcome">Las Pautas del ahorro</p>
         <div class="icon__container">
-          <img
-            class="icon"
-            src="https://img.icons8.com/carbon-copy/100/000000/bell.png"
-          />
+          <img class="icon" src="../assets/bell.png" />
         </div>
       </div>
     </div>

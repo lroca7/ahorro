@@ -4,10 +4,7 @@
       <div class="header__title">
         <p class="header__title--welcome">Hola, Camila</p>
         <div class="icon__container">
-          <img
-            class="icon"
-            src="https://img.icons8.com/carbon-copy/100/000000/bell.png"
-          />
+          <img class="icon" src="../assets/bell.png" />
         </div>
       </div>
     </div>
@@ -16,6 +13,7 @@
         <h3>Eres</h3>
         <h3>estratega</h3>
       </div>
+      <img alt="Vue logo" src="../assets/girl.png" />
       <h4>Tu Saldo</h4>
       <h1>$1.570.000</h1>
     </div>
@@ -43,6 +41,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.invest__motivation h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.invest__motivation h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.invest__motivation h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .invest__summary--values {
   font-weight: 600;
   text-align: end;
@@ -102,23 +121,6 @@ export default {
   margin-top: 90px;
 }
 
-.invest__card h1 {
-  line-height: 49px;
-  font-size: 36px;
-  margin: 0;
-}
-
-<<<<<<< HEAD
-=======
-.invest__motivation {
-}
-
->>>>>>> 4f8909487ba08ffdfca8871d00f4cc7309915937
-.invest__motivation h3 {
-  font-size: 18px;
-  line-height: 25px;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -139,8 +141,15 @@ export default {
   font-size: 18px;
   line-height: 25px;
 }
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 </style>
