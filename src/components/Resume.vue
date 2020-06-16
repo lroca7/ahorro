@@ -108,6 +108,12 @@ export default {
   margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+.invest__motivation {
+}
+
+>>>>>>> 4f8909487ba08ffdfca8871d00f4cc7309915937
 .invest__motivation h3 {
   font-size: 18px;
   line-height: 25px;

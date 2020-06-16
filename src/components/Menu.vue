@@ -1,7 +1,7 @@
 <template>
   <section class="menu">
     <ul class="menu__list">
-      <!-- <li>
+      <li>
         <img src="../assets/home.png" />
         <a>Inicio</a>
       </li>
@@ -20,7 +20,7 @@
       <li>
         <img src="../assets/more_options.png" />
         <a>Más</a>
-      </li> -->
+      </li>
     </ul>
   </section>
 </template>
