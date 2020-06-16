@@ -35,7 +35,7 @@ export default {
 <style scoped>
 .elipse__a {
   position: absolute;
-  bottom: 28px;
+  bottom: 12px;
 }
 .elipse {
   width: 50px;
@@ -51,7 +51,7 @@ export default {
 
   border-radius: 50px;
   position: absolute;
-  bottom: 3%;
+  bottom: 35px;
 
   display: flex;
   justify-content: center;
@@ -106,5 +106,10 @@ export default {
   height: 60px;
   display: flex;
   justify-content: center;
+
+  position: fixed;
+z-index: 4;
+bottom: 11px;
+width: 80%;
 }
 </style>
